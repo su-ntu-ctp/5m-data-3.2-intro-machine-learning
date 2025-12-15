@@ -35,12 +35,12 @@ Learners will be able to:
 | -------- | ----------------------- | -------------------------------------------------------- |
 | - 5mins  | Start zoom session      | So that learners can join early and start class on time. |
 | 10 mins  | Activity                | Recap on self-study and prework materials.               |
-| 45 mins  | Concept                 | Part 1: Introduction to machine learning.                |
-| 5 mins   | Break                   |                                                          |
+| 40 mins  | Concept                 | Part 1: Introduction to machine learning.                |
+| 10 mins  | Break                   |                                                          |
 |          | **1 HR MARK**           |
 | 30 mins  | Code-along              | Part 2: Linear regression.                               |
-| 25 mins  | Code-along              | Part 3: Logistic regression.                             |
-| 5 mins   | Break                   |                                                          |
+| 20 mins  | Code-along              | Part 3: Logistic regression.                             |
+| 10 mins  | Break                   |                                                          |
 |          | **2 HR MARK**           |
 | 50 mins  | Code-along              | Part 4: KNN.                                             |
 | 10 mins  | Briefing / Q&A          | Brief on references, assignment, quiz and Q&A.           |
