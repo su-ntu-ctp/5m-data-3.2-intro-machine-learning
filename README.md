@@ -12,23 +12,12 @@ Refer to the following markdown file for the respective sections of the class:
 
 ## Lesson Objectives
 
-Learners will understand:
+By the end of this lesson, you will be able to:
 
-- Machine Learning (ML) foundation and concepts
-  - Definition of ML
-  - Types of ML
-  - Types of Supervised Learning (Classification and Regression)
-- Data Types
-- Linear Regression
-- Logistic Regression
-- K-Nearest Neighbors (KNN)
-
-Learners will be able to:
-
-- Understand the definition and different types of ML
-- Compare the different data types
-- Train linear regression, logistic regression and KNN models
-
+1.  **Analyze Machine Learning Concepts:** Learners will be able to **differentiate** between various types of Machine Learning (Supervised vs. Unsupervised) and **classify** problems as Regression (Linear or Logarithmic) or Classification tasks based on the target variable.
+2.  **Evaluate Data for Modeling:** Learners will be able to **distinguish** between different data types (continuous vs. categorical) and relationships (linear vs. non-linear) to **select** the appropriate algorithm (Linear or Logarithmic Regression) for a given dataset.
+3.  **Apply Regression Models:** Learners will be able to **implement** both Linear and Logarithmic Regression models using Python libraries to **predict** continuous outcomes and **interpret** performance metrics (e.g., MSE, $R^2$) for different data distributions.
+4.  **Construct Classification Models:** Learners will be able to **build** and **compare** Logistic Regression and K-Nearest Neighbors (KNN) models to **predict** categorical outcomes, utilizing accuracy scores to validate their results.
 ## Lesson Plan
 
 | Duration | What                    | How or Why                                               |
