@@ -43,7 +43,7 @@ To deepen your retention and prepare for our live coding challenges, try one of 
 
 ## 📖 Additional Reading Material
 
-* [Introduction to Machine Learning](https://towardsdatascience.com/introduction-to-machine-learning-for-beginners-eed6024fdb08)
+* [Introduction to Machine Learning](https://medium.com/data-science/introduction-to-machine-learning-for-beginners-eed6024fdb08)
 * [Scikit-Learn User Guide: Supervised Learning](https://scikit-learn.org/stable/supervised_learning.html)
 
 ### 🙋🏻‍♂️ See you in the session!
