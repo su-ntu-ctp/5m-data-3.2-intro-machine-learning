@@ -1,51 +1,71 @@
-# **Self-Study Preparation Guide**
+# **Self-Study Preparation Guide: Supervised Learning Fundamentals**
 
 **⏳ Estimated Prep Time:** 45–60 minutes
 
-Welcome to our flipped-classroom session, where you'll review foundational concepts beforehand to maximize our time for hands-on coding and debugging. This pre-study focuses on **Supervised Learning**, specifically the mathematical intuition and practical implementation of Linear Regression, Logistic Regression, and K-Nearest Neighbors (K-NN). By mastering these basics now, you will be ready to build predictive models that solve real-world business problems—from forecasting sales to diagnosing medical conditions—during our live workshop.
+Welcome to our flipped-classroom session, where you'll review foundational concepts beforehand to maximize our time for hands-on coding and debugging. This pre-study focuses on mastering three pillars of Supervised Learning: **Linear Regression**, **Logistic Regression**, and **K-Nearest Neighbors (K-NN)**.
 
-## ⚡ Your Self-Study Tasks
+By exploring these notebooks now, you will come to class ready to tackle real-world predictive modeling challenges, rather than spending our live time on basic syntax and theory.
+
+## **⚡ Your Self-Study Tasks**
 
 Please complete the following activities before our session.
 
-### 📝 Task 1: Decoding Linear Regression (20 Minutes)
+### **📝 Task 1: Interpreting Linear Regression Models (20 Minutes)**
 
-**Activity:** Open the `supervised_learning_1_lesson.ipynb` notebook. Read the Markdown cells and code examples under the **"Linear Regression"** and **"Scikit-Learn Tutorial"** headers. Pay close attention to how the mathematical equation translates into Python code.
+**Activity:** Open and review the [`part_1_supervised_learning.ipynb`](./notebooks/part_1_supervised_learning.ipynb) notebook. Read through the mathematical foundations (Cost Function, MSE, $R^2$) and compare the implementation styles of **Scikit-Learn** versus **Statsmodels**.
 
-**Guiding Questions:**
-* In the equation $Y = \beta_0 + \beta_1X_1 + \epsilon$, what do the coefficients ($\beta$) represent in a real-world context (e.g., predicting house prices)?
-* Why do we split the data into `training` and `testing` sets before fitting the model? How does this prevent "overfitting"?
-* Review the **Cost Function** section. Why is minimizing the "Mean Squared Error" (MSE) the primary goal during training?
+**Focus your attention on these key components:**
 
-### 📝 Task 2: From Numbers to Categories – Logistic Regression (20 Minutes)
-
-**Activity:** Scroll to the **"Logistic Regression"** section in the notebook. Review how this model differs from linear regression, specifically regarding the **Sigmoid function** and the concept of **Log-Odds**.
+1. **The Equation:** How independent variables ($X$) relate to the dependent variable ($Y$).  
+2. **Evaluation Metrics:** The difference between Mean Squared Error (MSE) and R-squared ($R^2$).  
+3. **Library Comparison:** How `statsmodels` provides detailed statistical summaries compared to the streamlined API of `sklearn`.
 
 **Guiding Questions:**
-* Linear regression predicts continuous values (e.g., price). Logistic regression predicts binary classes (0 or 1). How does the **Sigmoid function** act as a bridge between these two concepts?
-* Look at the "Statsmodels Tutorial" for the Pima Indians Diabetes dataset. How do you interpret a p-value in the summary table provided by `sm.Logit`?
 
-### 📝 Task 3: The Logic of Neighbors (15 Minutes)
+* Why do we try to minimize the "Sum of Squares of Residuals" (SSR) when training a model?  
+* Looking at the OLS Regression Results in the statsmodels section, what information does the p-value ($P\>|t|$) give us about a feature like `Glucose` or `BMI`?
 
-**Activity:** Skim the **"K-Nearest Neighbors (K-NN)"** section. Focus on the visualization of how the algorithm decides a class based on distance metrics.
+### **📝 Task 2: The Logic of Logistic Regression (20 Minutes)**
+
+**Activity:** Review the [`part_2_supervised_learning.ipynb`](./notebooks/part_2_supervised_learning.ipynb) notebook. Focus on how we adapt regression techniques to solve **Classification** problems (predicting categories like 0 or 1).
+
+**Focus your attention on these key components:**
+
+1. **The Sigmoid Function:** How it squashes linear output into a probability between 0 and 1\.  
+2. **Odds vs. Probability:** Understanding the math behind the decision boundary.  
+3. **Decision Boundary:** Visualizing how the model separates different classes (e.g., the Iris flower types).
 
 **Guiding Questions:**
-* The text mentions the trade-off in choosing the 'k' value. What happens to the model's sensitivity to noise if 'k' is too small?
-* How does the **Euclidean Distance** formula relate to finding the "nearest" data points?
 
-## 🙌🏻 Active Engagement Strategies
+* Why is a straight line usually a poor choice for predicting a binary outcome (like "Diabetes: Yes/No")? 
+* In the code cells, how do we evaluate the performance of a classification model differently than a regression model? (Hint: Look for `accuracy_score`).
 
-To deepen your retention and prepare for our live coding challenges, try one of the following:
+### **📝 Task 3: K-Nearest Neighbors (K-NN) and Hyperparameters (20 Minutes)**
 
-* **Scenario Matching:** Look at the three models covered (Linear, Logistic, K-NN). If you were asked to predict *Customer Churn* (Yes/No), which model would you choose? What about predicting *Next Quarter's Revenue*?
-* **"Code Commentary":** In the notebook, find the cell where `model.fit(X_train, y_train)` is called. Write a one-sentence explanation of what the computer is actually "learning" at that specific step.
-* **Question Generation:** Write down 2 specific questions about *interpreting model performance* (e.g., R-squared or Accuracy Score) to ask during the live Q&A.
+**Activity:** Skim through the [`part_3_supervised_learning.ipynb`](./notebooks/part_3_supervised_learning.ipynb) notebook. Observe how K-NN uses distance metrics to make predictions and how it differs from the equation-based models in Tasks 1 and 2\.
 
-## 📖 Additional Reading Material
+**Focus your attention on these key components:**
+
+1. **Distance Metrics:** How Euclidean distance determines "closeness."  
+2. **The 'k' Parameter:** The trade-off between a small 'k' (sensitive to noise) and a large 'k' (over-smoothed).  
+3. **Regression vs. Classification:** How K-NN handles voting for categories versus averaging for numbers.
+
+**Guiding Questions:**
+
+* If you chose $k=1$, how would the model behave compared to $k=100$? Which is more likely to overfit?  
+* In the "Diamond Price Prediction" graph, notice how the red predicted line follows the data. How does changing 'k' change that line?
+
+## **🙌🏻 Active Engagement Strategies**
+
+To deepen your retention, try one of the following while you review:
+
+* **Concept Comparison:** Sketch a simple table comparing **Linear Regression** vs. **Logistic Regression**. Columns might include: *Target Variable Type (Continuous/Categorical)*, *Key Function (Linear/Sigmoid)*, and *Primary Metric (MSE/Accuracy)*.  
+* **Scenario Matching:** Think of a problem in your current workplace. Would you solve it using Regression (predicting a number) or Classification (predicting a category)? Which algorithm from the reading would you try first?
+
+## **📖 Additional Reading Material (Optional)**
 
 * [Introduction to Machine Learning](https://medium.com/data-science/introduction-to-machine-learning-for-beginners-eed6024fdb08)
 * [Scikit-Learn User Guide: Supervised Learning](https://scikit-learn.org/stable/supervised_learning.html)
 
-### 🙋🏻‍♂️ See you in the session!
-
+### **🙋🏻‍♂️ See you in the session\!**
 
