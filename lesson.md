@@ -20,9 +20,9 @@ Conceptual knowledge, refer to slides.
 
 ## Part 2 - Supervised Learning Algorithms
 
-We will be using the `notebooks/supervised_learning_1_lesson.ipynb` notebook throughout this lesson.
+We will be using the `notebooks/part_1_supervised_learning.ipynb` notebook throughout this lesson.
 
 > 1. Activate the environement `conda activate ml`.
 > 2. Run `jupyter notebook`.
-> 3. In the notebook, open `notebooks/supervised_learning_1_lesson.ipynb`.
+> 3. In the notebook, open `notebooks/part_1_supervised_learning.ipynb` and follow by `notebooks/part_2_supervised_learning.ipynb`, `notebooks/part_3_supervised_learning.ipynb` and `notebooks/part_4_supervised_learning.ipynb`
 > 4. Follow on with the lesson in the notebook.
