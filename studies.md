@@ -20,11 +20,6 @@ Please complete the following activities before our session.
 2. **Evaluation Metrics:** The difference between Mean Squared Error (MSE) and R-squared ($R^2$).  
 3. **Library Comparison:** How `statsmodels` provides detailed statistical summaries compared to the streamlined API of `sklearn`.
 
-**Guiding Questions:**
-
-* Why do we try to minimize the "Sum of Squares of Residuals" (SSR) when training a model?  
-* Looking at the OLS Regression Results in the statsmodels section, what information does the p-value ($P\>|t|$) give us about a feature like `Glucose` or `BMI`?
-
 ### **📝 Task 2: The Logic of Logistic Regression (20 Minutes)**
 
 **Activity:** Review the [`part_2_supervised_learning.ipynb`](./notebooks/part_2_supervised_learning.ipynb) notebook. Focus on how we adapt regression techniques to solve **Classification** problems (predicting categories like 0 or 1).
@@ -49,11 +44,6 @@ Please complete the following activities before our session.
 1. **Distance Metrics:** How Euclidean distance determines "closeness."  
 2. **The 'k' Parameter:** The trade-off between a small 'k' (sensitive to noise) and a large 'k' (over-smoothed).  
 3. **Regression vs. Classification:** How K-NN handles voting for categories versus averaging for numbers.
-
-**Guiding Questions:**
-
-* If you chose $k=1$, how would the model behave compared to $k=100$? Which is more likely to overfit?  
-* In the "Diamond Price Prediction" graph, notice how the red predicted line follows the data. How does changing 'k' change that line?
 
 ## **🙌🏻 Active Engagement Strategies**
 
