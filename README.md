@@ -19,8 +19,11 @@ Refer to the following markdown file for the respective sections of the class:
 By the end of this lesson, you will be able to:
 
 * Differentiate between various types of Machine Learning (Supervised vs. Unsupervised) and **classify** problems as Regression (Linear or Logarithmic) or Classification tasks based on the target variable.
+
 * Distiguish between different data types (continuous vs. categorical) and relationships (linear vs. non-linear) to **select** the appropriate algorithm (Linear or Logarithmic Regression) for a given dataset.
+
 * Implement both Linear and Logarithmic Regression models using Python libraries to **predict** continuous outcomes and **interpret** performance metrics (e.g., MSE, $R^2$) for different data distributions.
+
 * Build and compare Logistic Regression and K-Nearest Neighbors (KNN) models to **predict** categorical outcomes, utilizing accuracy scores to validate their results.
 
 ## Lesson Plan
